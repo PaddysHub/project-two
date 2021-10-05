@@ -34,17 +34,24 @@ Textboxes, actions, gap between cards and other text (margin)
 #### Do we have room for additional reusable atoms to be produced? (there are 4 total by my count)
 
 emphasized icon
+
 banner/header
+
 scaffolding of card
+
 whole card 
 
 
 #### What should we call each of them?
 
 Ex. from class (ODL is a company) - name depending on what we want to name it.
+
 ODL-icon
+
 ODL-science-card
+
 ODL-header
+
 ODL-card
 
 # Meeting notes
