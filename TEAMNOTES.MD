@@ -67,7 +67,33 @@ These are notes to be maintained PER date that you meet. What you did and what t
 # Status check ins
 These are dedicated status check-ins as this is a multi-week project
 ### Check-in 1
-- 
+Names-
+
+-Icon = pad-icon
+
+-Banner/Header = pad-header
+
+-Scaffolding of card = pad-scaff
+
+-whole card = pad-card
+
+
+Properties-
+
+-States 
+-Size 
+-Margins
+-Colors
+
+Design Considerations-
+
+-Contrast 
+-Accessibility
+-Scalibility
+
+
+In class on tuesday we will be dividing work on our elements evenly based on who is comfortable working on each part. We will also be helping each other if we run into any issues. 
+
 - 
 ### Check-in 2
 - 
