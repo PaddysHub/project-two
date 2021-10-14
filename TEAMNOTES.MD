@@ -94,6 +94,11 @@ Design Considerations-
 
 In class on tuesday we will be dividing work on our elements evenly based on who is comfortable working on each part. We will also be helping each other if we run into any issues. 
 
+Class Participation 10/14 - 
+1. Simple colors is a very useful way to simply set and modify colors. We are going to implement it in our code.
+2. We learned what the other team was creating, and how they modified the headers and subheaders on theirs. It helped us out because we were wondering how to do that.
+3. Our next steps are to implement simple colors into our card. After that, we are continuing to work on our code for the card. We found an example of a card online that we are going to try to replicate. The link is https://www.habitat.org/themes/custom/h4h_theme/dist/style-guide/section-components.html#kssref-components-card
+
 - 
 ### Check-in 2
 - 
