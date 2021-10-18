@@ -19,6 +19,7 @@ export class LearningCard extends LitElement {
   }
 
   // HTMLElement life-cycle, built in; use this for setting defaults
+
   constructor() {
     super();
     this.myIcon = null;
@@ -26,6 +27,7 @@ export class LearningCard extends LitElement {
   }
 
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
+
   static get properties() {
     return {
       // reflect allows state changes to the element's property to be leveraged in CSS selectors
@@ -38,6 +40,7 @@ export class LearningCard extends LitElement {
 
   // updated fires every time a property defined above changes
   // this allows you to react to variables changing and use javascript to perform logic
+
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === 'type' && this[propName] === 'science') {
@@ -56,6 +59,7 @@ export class LearningCard extends LitElement {
 
   // HTMLElement life-cycle, element has been connected to the page / added or moved
   // this fires EVERY time the element is moved
+
   connectedCallback() {
     super.connectedCallback();
   }
@@ -65,6 +69,7 @@ export class LearningCard extends LitElement {
   disconnectedCallback() {
     super.disconnectedCallback();
   }
+
   // CSS - specific to Lit
 
   static get styles() {
@@ -72,6 +77,9 @@ export class LearningCard extends LitElement {
       :host {
         display: block;
       }
+
+      /* this is how you match something on the tag itself like <learning-card type="math"> and then style the img inside */
+
       :host([type='math']) img {
         background-color: purple;
       }
@@ -91,7 +99,9 @@ export class LearningCard extends LitElement {
       <h1>cool</h1>
       <div>${this.type}</div>
       <div>
+
         <pad-header></pad-header>
+
         <div
           class="slot-wrapper"
           data-label="Header"
