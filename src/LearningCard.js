@@ -1,5 +1,6 @@
 // dependencies / things imported
 import { LitElement, html, css } from 'lit';
+import './pad-header.js';
 
 // this is the base path to the assets calculated at run time
 // this ensures that assets are shipped correctly when building the demo
@@ -16,6 +17,7 @@ export class LearningCard extends LitElement {
   static get tag() {
     return 'learning-card';
   }
+
   // HTMLElement life-cycle, built in; use this for setting defaults
 
   constructor() {
@@ -23,6 +25,7 @@ export class LearningCard extends LitElement {
     this.myIcon = null;
     this.type = 'math';
   }
+
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
 
   static get properties() {
@@ -34,6 +37,7 @@ export class LearningCard extends LitElement {
       myIcon: { type: String, attribute: 'my-icon' },
     };
   }
+
   // updated fires every time a property defined above changes
   // this allows you to react to variables changing and use javascript to perform logic
 
@@ -52,6 +56,7 @@ export class LearningCard extends LitElement {
       super.firstUpdated(changedProperties);
     }
   }
+
   // HTMLElement life-cycle, element has been connected to the page / added or moved
   // this fires EVERY time the element is moved
 
@@ -66,12 +71,15 @@ export class LearningCard extends LitElement {
   }
 
   // CSS - specific to Lit
+
   static get styles() {
     return css`
       :host {
         display: block;
       }
+
       /* this is how you match something on the tag itself like <learning-card type="math"> and then style the img inside */
+
       :host([type='math']) img {
         background-color: purple;
       }
@@ -83,6 +91,7 @@ export class LearningCard extends LitElement {
       }
     `;
   }
+
   // HTML - specific to Lit
 
   render() {
@@ -90,6 +99,9 @@ export class LearningCard extends LitElement {
       <h1>cool</h1>
       <div>${this.type}</div>
       <div>
+
+        <pad-header></pad-header>
+
         <div
           class="slot-wrapper"
           data-label="Header"
