@@ -59,6 +59,16 @@ ODL-card
 2. We learned what the other team was creating, and how they modified the headers and subheaders on theirs. It helped us out because we were wondering how to do that.
 3. Our next steps are to implement simple colors into our card. After that, we are continuing to work on our code for the card. 
 
+#### Class Participation 10/19 - 
+
+1. It was very interesting to see Chucks example.  I know we aren't supposed to really use this, but it was cool to see the multiple render functions that Chuck made, it does seem more complicated though.  We took away some good CSS ideas that he implemeted in his card example. We also learned from seeing some code from other groups in class. Something interesting was how to dynamically import the other elements of the card so that it does in fact save some time when loading the card.  That is something we would like to do as well. 
+
+2. Something that we can implement from his example is that we did not think of is calling flex on the header so that they header will follow accessibility rules when changing the size of the window.  Like I said above, I do want to take away importing the other parts of the element dynamically. 
+
+3. Taking away from what we saw with Chuck, I think we can see some of the pieces that he did with multiple render functions, but bring it just into one function. Also, he used svgs in his code but I think we can take away the basic format of that. I also think we could do a little less css than he had and still meet what our goals are in this project.  
+
+4. Our next steps will be meeting tomorrow to begin extending our project, espcially with our icon and getting our header visually in a better place.  We need to work more on the pad-header file and get that finished. Our scaffold element is also a goal to dicuss more in depth tomorrow. 
+
 # Meeting notes
 These are notes to be maintained PER date that you meet. What you did and what the next steps are
 ### Meeting Date
