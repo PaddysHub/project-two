@@ -146,6 +146,7 @@ export class LearningCard extends LitElement {
           {
             property: 'type',
             title: 'Type',
+            font: 'Comic Sans',
             description: 'Identifies the card',
             inputMethod: 'select',
             options: {
