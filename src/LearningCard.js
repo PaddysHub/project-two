@@ -1,7 +1,9 @@
 // dependencies / things imported
 import { LitElement, html, css } from 'lit';
 import './pad-header.js';
-
+import './pad-icon.js';
+import './pad-scaff.js';
+import './pad-card.js';
 // this is the base path to the assets calculated at run time
 // this ensures that assets are shipped correctly when building the demo
 // on github pages, or when people reuse assets outside your elements in production
