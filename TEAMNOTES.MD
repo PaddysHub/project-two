@@ -120,7 +120,7 @@ In class on tuesday we will be dividing work on our elements evenly based on who
 - This week we were able to successfully get simple colors implemented.  We got to go over how to do it during class on Thursday then we got that completely implemented after class.  I have this information in the meeting notes above, but for now we just have some filler words in the header where simple colors is implemented and a random color put in to make sure that simple colors was working correctly.  The wording will obviously be changed as well as the color in the header to match the card we are creating.  Simple colors is an awesome tool that saves a ton of time, we enjoyed the lecture on it during class on Thursday.  We are still working on our icon as well.  Hopefully we will get to meet tomorrow and get that finished up and then in class on Tuesday we will get to see and review our peers code on icons as we have planned. 
 - 
 ### Check-in 3
-- 
+- This week we ran into a merge conflict with Github. The issue we ran into was resolved but did take up most of our time during class on Tuesday. We got back on track Thursday and started to work on the styling and font of our card. One challenge we had with styling our card is the card height and width. We are trying to format it in a way where it looks visually pleasing without the card extending off the screen. We did successfully change the font of our card on sunday however. All in all, we are somewhat behind because of our merge conflict but plan on meeting outside of class on monday.
 - 
 ### Check-in 4
 - 
