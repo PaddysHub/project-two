@@ -41,7 +41,7 @@ static get styles() {
     ];
   }
 
-render() {
+render() { //creating the scaffold of the card
     return html `
         <div id="card">
             <slot name="card"></slot>
