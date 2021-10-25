@@ -3,9 +3,9 @@ import { SimpleColors } from '@lrnwebcomponents/simple-colors/simple-colors.js';
 
 import './pad-header.js';
 import './pad-icon.js';
-import './pad-card.js'; //imported so they can be used in the scaffold
+import './pad-card.js'; /* imported so they can be used in the scaffold */
 
-export class padScaff extends LitElement {
+export class padScaff extends SimpleColors {
     static get tag() {
     return 'pad-scaff';
 }
@@ -41,7 +41,7 @@ static get styles() {
     ];
   }
 
-render() { //creating the scaffold of the card
+render() {
     return html `
         <div id="card">
             <slot name="card"></slot>
@@ -53,6 +53,7 @@ render() { //creating the scaffold of the card
             <slot name="header"></slot>
         </div>
     `;
+    }
 }
 
 window.customElements.define(padScaff.tag, padScaff);
