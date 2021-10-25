@@ -41,7 +41,7 @@ static get styles() {
     ];
   }
 
-render() {
+render() { /* Not completely filled in yet. Once card, icon, and header are complete this can be implemented in the html file */
     return html `
         <div id="card">
             <slot name="card"></slot>
