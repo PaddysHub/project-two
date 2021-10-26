@@ -8,9 +8,9 @@ export class padHeader extends SimpleColors {
 
   constructor() {
     super();
-    this.accentColor = 'pink';
+    this.accentColor = 'green';
     this.dark = false;
-    this.title = "Paddy's Hub";
+    this.title = 'Card';
   }
 
   static get properties() {
@@ -30,6 +30,7 @@ export class padHeader extends SimpleColors {
           color: var(--simple-colors-default-theme-grey-12);
           font-family: Verdana, Geneva, Tahoma, sans-serif;
           font-size: 30px;
+          border: 1px solid black;
         }
       `,
     ];

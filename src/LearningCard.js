@@ -82,6 +82,7 @@ export class LearningCard extends LitElement {
 
       :host([type='math']) img {
         background-color: purple;
+        border: 1px solid black;
       }
       img {
         display: inline-flex;
@@ -118,7 +119,6 @@ export class LearningCard extends LitElement {
         >
           <slot name="content"></slot>
           <slot></slot>
-          <footer>I have a footer!</footer>
         </div>
       </div>
     `;
