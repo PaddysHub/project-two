@@ -34,6 +34,7 @@ export class LearningCard extends LitElement {
       type: { type: String, reflect: true },
       // attribute helps us bind the JS spec for variables names to the HTML spec
       // <learning-card my-icon="whatever" will set this.myIcon to "whatever"
+      // need to add string
       myIcon: { type: String, attribute: 'my-icon' },
     };
   }
@@ -53,8 +54,8 @@ export class LearningCard extends LitElement {
         this.myIcon = 'question';
         this.subheading = 'Math Objectives';
       }
-      if (propName === 'type' && this[propName] === 'science') {
-        this.myIcon = 'beaker';
+      if (propName === 'type' && this[propName] === 'technology') {
+        this.myIcon = 'lightbulb';
       }
     });
   }
@@ -93,7 +94,7 @@ export class LearningCard extends LitElement {
       :host([type='math']) img {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
-        background-color: blue;
+        background-color: red;
         border: 1px solid black;
       }
 
