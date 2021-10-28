@@ -41,8 +41,18 @@ export class LearningCard extends LitElement {
   // updated fires every time a property defined above changes
   // this allows you to react to variables changing and use javascript to perform logic
 
+  // Needs to be done with each type of card. Math/Science/English
+
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
+      if (propName === 'type' && this[propName] === 'science') {
+        this.myIcon = 'beaker';
+        this.subheading = 'Science Objectives';
+      }
+      if (propName === 'type' && this[propName] === 'math') {
+        this.myIcon = 'question';
+        this.subheading = 'Math Objectives';
+      }
       if (propName === 'type' && this[propName] === 'science') {
         this.myIcon = 'beaker';
       }
