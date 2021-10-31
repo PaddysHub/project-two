@@ -128,8 +128,8 @@ export class LearningCard extends LitElement {
         >
           <slot name="header"></slot>
         </div>
-        <div slot="content" class="cardContent">
-          <p>Paragraph</p>
+        <div slot="content" class="content-card">
+          <p>Paragraph starts</p>
           <ul>
             <li>1</li>
             <li>2</li>
