@@ -54,7 +54,7 @@ export class LearningCard extends LitElement {
         this.myIcon = 'question';
         this.subheading = 'Math Objectives';
       }
-      if (propName === 'type' && this[propName] === 'technology') {
+      if (propName === 'type' && this[propName] === 'learning objectives') {
         this.myIcon = 'lightbulb';
       }
     });
@@ -91,17 +91,22 @@ export class LearningCard extends LitElement {
 
       /* this is how you match something on the tag itself like <learning-card type="math"> and then style the img inside */
 
+      :host([type='learning objectives']) img {
+        height: var(--learning-card-height, 100px);
+        width: var(--learning-card-width, 100px);
+        background-color: orange;
+      }
       :host([type='chem connection']) img {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
-        background-color: red;
+        background-color: green;
         border: 1px solid black;
       }
 
       :host([type='did you know']) img {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
-        background-color: green;
+        background-color: blue;
         border: 1px solid black;
       }
     `;
