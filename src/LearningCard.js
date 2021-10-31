@@ -95,6 +95,7 @@ export class LearningCard extends LitElement {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
         background-color: orange;
+        border: 1px solid black;
       }
       :host([type='chem connection']) img {
         height: var(--learning-card-height, 100px);
@@ -129,7 +130,7 @@ export class LearningCard extends LitElement {
           <slot name="header"></slot>
         </div>
         <div slot="content" class="content-card">
-          <p>Paragraph starts</p>
+          <p>Body</p>
           <ul>
             <li>1</li>
             <li>2</li>
