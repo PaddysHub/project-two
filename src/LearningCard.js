@@ -23,7 +23,7 @@ export class LearningCard extends LitElement {
   constructor() {
     super();
     this.myIcon = null;
-    this.type = 'math';
+    this.type = 'chem connection';
   }
 
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
@@ -46,11 +46,11 @@ export class LearningCard extends LitElement {
 
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
-      if (propName === 'type' && this[propName] === 'science') {
+      if (propName === 'type' && this[propName] === 'did you know') {
         this.myIcon = 'beaker';
         this.subheading = 'Science Objectives';
       }
-      if (propName === 'type' && this[propName] === 'math') {
+      if (propName === 'type' && this[propName] === 'chem connection') {
         this.myIcon = 'question';
         this.subheading = 'Math Objectives';
       }
@@ -91,14 +91,14 @@ export class LearningCard extends LitElement {
 
       /* this is how you match something on the tag itself like <learning-card type="math"> and then style the img inside */
 
-      :host([type='math']) img {
+      :host([type='chem connection']) img {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
         background-color: red;
         border: 1px solid black;
       }
 
-      :host([type='science']) img {
+      :host([type='did you know']) img {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
         background-color: green;
