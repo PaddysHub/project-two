@@ -1,6 +1,7 @@
 // dependencies / things imported
 import { LitElement, html, css } from 'lit';
 import './pad-header.js';
+import './pad-icon.js';
 
 // this is the base path to the assets calculated at run time
 // this ensures that assets are shipped correctly when building the demo
@@ -22,7 +23,7 @@ export class LearningCard extends LitElement {
 
   constructor() {
     super();
-    this.myIcon = null;
+    this.myIcon = beaker;
     this.type = 'chem connection';
   }
 
@@ -47,15 +48,15 @@ export class LearningCard extends LitElement {
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === 'type' && this[propName] === 'did you know') {
-        this.myIcon = 'beaker';
+        this.myIcon = question;
         this.subheading = 'Science Objectives';
       }
       if (propName === 'type' && this[propName] === 'chem connection') {
-        this.myIcon = 'question';
+        this.myIcon = beaker;
         this.subheading = 'Math Objectives';
       }
       if (propName === 'type' && this[propName] === 'learning objectives') {
-        this.myIcon = 'lightbulb';
+        this.myIcon = lightbulb;
       }
     });
   }
@@ -87,6 +88,7 @@ export class LearningCard extends LitElement {
     return css`
       :host {
         display: grid;
+        border: 1px solid black;
       }
 
       /* this is how you match something on the tag itself like <learning-card type="math"> and then style the img inside */
@@ -135,9 +137,11 @@ export class LearningCard extends LitElement {
             <li>3</li>
           </ul>
           <!--Need to figure out how to have program determine what icon is used rather than pasting them all -->
-          <img part="icon" src="${beaker}" alt="" />
-          <img part="icon" src="${lightbulb}" alt="" />
-          <img part="icon" src="${question}" alt="" />
+          <img
+            src="${this.myIcon}"
+            alt=""
+            style="height: 100px; width: 100px;"
+          />
           <div
             class="slot-wrapper"
             data-label="Content"
