@@ -100,14 +100,12 @@ export class LearningCard extends LitElement {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
         background-color: green;
-        border: 1px solid black;
       }
 
       :host([type='did you know']) img {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
         background-color: blue;
-        border: 1px solid black;
       }
     `;
   }
