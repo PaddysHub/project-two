@@ -123,5 +123,5 @@ In class on tuesday we will be dividing work on our elements evenly based on who
 - This week we ran into a merge conflict with Github. The issue we ran into was resolved but did take up most of our time during class on Tuesday. We got back on track Thursday and started to work on the styling and font of our card. One challenge we had with styling our card is the card height and width. We are trying to format it in a way where it looks visually pleasing without the card extending off the screen. We did successfully change the font of our card on sunday however. All in all, we are somewhat behind because of our merge conflict but plan on meeting outside of class on monday.
 - 
 ### Check-in 4
-- 
+- This week we made alot of progress in styling the image of our cards. Our first goal was to establish how each card would be styled based on the type of card. Although we did get the color of each icon right based on card type, we are having trouble determining how we associate a particular icon image to each card. Despite the trouble we are having with the pad icon file, we are making lots of progress creating our subheading and content for each card. We expect to be close to done our card by the end of monday, and hope to finish a revision on Tuesday.
 - 
