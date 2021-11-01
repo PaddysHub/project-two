@@ -8,9 +8,7 @@ export class padHeader extends SimpleColors {
 
   constructor() {
     super();
-    this.accentColor = 'green';
     this.dark = false;
-    this.title = 'Card';
   }
 
   static get properties() {
@@ -30,14 +28,13 @@ export class padHeader extends SimpleColors {
           color: var(--simple-colors-default-theme-grey-12);
           font-family: Verdana, Geneva, Tahoma, sans-serif;
           font-size: 30px;
-          border: 1px solid black;
         }
       `,
     ];
   }
 
   render() {
-    return html`<div>This is my ${this.title}<slot></slot></div>`;
+    return html`<div>Blank<slot></slot></div>`;
   }
 }
 
