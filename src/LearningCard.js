@@ -89,6 +89,8 @@ export class LearningCard extends LitElement {
       :host {
         display: grid;
         border: 1px solid black;
+        padding-left: 100px;
+        margin: 35px;
       }
 
       /* this is how you match something on the tag itself like <learning-card type="math"> and then style the img inside */
@@ -97,7 +99,6 @@ export class LearningCard extends LitElement {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
         background-color: orange;
-        border: 1px solid black;
       }
       :host([type='chem connection']) img {
         height: var(--learning-card-height, 100px);
@@ -117,7 +118,16 @@ export class LearningCard extends LitElement {
 
   render() {
     return html`
-      <h1>Unit 1</h1>
+      <div>
+        <h1>
+          Unit 1
+          <img
+            src="${this.myIcon}"
+            alt=""
+            style="height: 100px; width: 100px;"
+          />
+        </h1>
+      </div>
       <div>${this.type}</div>
       <div>
         <pad-header></pad-header>
@@ -137,11 +147,7 @@ export class LearningCard extends LitElement {
             <li>3</li>
           </ul>
           <!--Need to figure out how to have program determine what icon is used rather than pasting them all -->
-          <img
-            src="${this.myIcon}"
-            alt=""
-            style="height: 100px; width: 100px;"
-          />
+
           <div
             class="slot-wrapper"
             data-label="Content"

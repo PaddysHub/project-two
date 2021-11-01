@@ -67,7 +67,7 @@ export class padIcon extends SimpleColors {
       ...super.styles,
       css`
         :host {
-          display: grid;
+          display: block;
         }
 
         /* this is how you match something on the tag itself like <learning-card type="math"> and then style the img inside */
@@ -76,7 +76,6 @@ export class padIcon extends SimpleColors {
           height: var(--learning-card-height, 100px);
           width: var(--learning-card-width, 100px);
           background-color: orange;
-          border: 1px solid black;
         }
         :host([type='chem connection']) img {
           height: var(--learning-card-height, 100px);
