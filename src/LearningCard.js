@@ -95,6 +95,7 @@ export class LearningCard extends LitElement {
         height: var(--learning-card-height, 100px);
         width: var(--learning-card-width, 100px);
         background-color: orange;
+        border: 1px solid black;
       }
       :host([type='chem connection']) img {
         height: var(--learning-card-height, 100px);
@@ -126,17 +127,25 @@ export class LearningCard extends LitElement {
         >
           <slot name="header"></slot>
         </div>
-        <!--Need to figure out how to have program determine what icon is used rather than pasting them all -->
-        <img part="icon" src="${beaker}" alt="" />
-        <img part="icon" src="${lightbulb}" alt="" />
-        <img part="icon" src="${question}" alt="" />
-        <div
-          class="slot-wrapper"
-          data-label="Content"
-          data-layout-slotname="content"
-        >
-          <slot name="content"></slot>
-          <slot></slot>
+        <div slot="content" class="content-card">
+          <p>Body</p>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <!--Need to figure out how to have program determine what icon is used rather than pasting them all -->
+          <img part="icon" src="${beaker}" alt="" />
+          <img part="icon" src="${lightbulb}" alt="" />
+          <img part="icon" src="${question}" alt="" />
+          <div
+            class="slot-wrapper"
+            data-label="Content"
+            data-layout-slotname="content"
+          >
+            <slot name="content"></slot>
+            <slot></slot>
+          </div>
         </div>
       </div>
     `;
