@@ -50,44 +50,13 @@ export class LearningCard extends LitElement {
       if (propName === 'type' && this[propName] === 'did you know') {
         this.icon = question;
         this.subheading = 'Science Objectives';
-        this.body = html`
-          <ul>
-            <li>
-              There is about 0.4 pound or 200 grams of salt (NaCl) in the
-              average adult human body.
-            </li>
-          </ul>
-        `;
       }
       if (propName === 'type' && this[propName] === 'chem connection') {
         this.icon = beaker;
         this.subheading = 'Math Objectives';
-        this.body = html`
-          <ul>
-            <li>Describe the subatomic particles that make up an atom.</li>
-            <li>
-              Use the periodic table to determine the numbers of protons and
-              electrons in a neutral (uncharged) atom.
-            </li>
-          </ul>
-        `;
       }
       if (propName === 'type' && this[propName] === 'learning objectives') {
         this.icon = lightbulb;
-        this.body = html`
-          <ul>
-            <li>Describe the subatomic particles that make up an atom.</li>
-            <li>
-              Use the periodic table to determine the numbers of protons and
-              electrons in a neutral (uncharged) atom.
-            </li>
-            <li>Describe the subatomic particles that make up an atom.</li>
-            <li>
-              Use the periodic table to determine the numbers of protons and
-              electrons in a neutral (uncharged) atom.
-            </li>
-          </ul>
-        `;
       }
     });
   }
@@ -169,6 +138,7 @@ export class LearningCard extends LitElement {
           <slot name="header"></slot>
         </div>
         <div slot="content" class="content-card" style="margin: 35px">
+          <slot> </slot>
           <p></p>
           <ul>
             <div>${this.body}</div>
