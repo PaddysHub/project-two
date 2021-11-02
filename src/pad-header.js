@@ -27,14 +27,13 @@ export class padHeader extends SimpleColors {
           background-color: var(--simple-colors-default-theme-accent-1);
           color: var(--simple-colors-default-theme-grey-12);
           font-family: Verdana, Geneva, Tahoma, sans-serif;
-          font-size: 30px;
         }
       `,
     ];
   }
 
   render() {
-    return html`<div>Blank<slot></slot></div>`;
+    return html`<div><slot></slot></div>`;
   }
 }
 

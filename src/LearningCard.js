@@ -89,46 +89,44 @@ export class LearningCard extends LitElement {
       :host {
         display: grid;
         border: 1px solid black;
-        padding-left: 100px;
         margin: 35px;
       }
 
       /* this is how you match something on the tag itself like <learning-card type="math"> and then style the img inside */
 
-      :host([type='learning objectives']) img {
+      :host([type='learning objectives']) #cardbackground {
         height: var(--learning-card-height, 100px);
-        width: var(--learning-card-width, 100px);
+        width: var(--learning-card-width, 100%);
         background-color: orange;
       }
-      :host([type='chem connection']) img {
+      :host([type='chem connection']) #cardbackground {
         height: var(--learning-card-height, 100px);
-        width: var(--learning-card-width, 100px);
+        width: var(--learning-card-width, 100%);
         background-color: green;
       }
 
-      :host([type='did you know']) img {
+      :host([type='did you know']) #cardbackground {
         height: var(--learning-card-height, 100px);
-        width: var(--learning-card-width, 100px);
+        width: var(--learning-card-width, 100%);
         background-color: blue;
       }
     `;
   }
 
   // HTML - specific to Lit
-
+  // display: inline; position: absolute; font-size: 30px; color: white;
   render() {
     return html`
-      <div>
-        <h1>
-          Unit 1
-          <img
-            src="${this.myIcon}"
-            alt=""
-            style="height: 100px; width: 100px;"
-          />
-        </h1>
+      <div id="cardbackground" style="display: inline;">
+        <img src="${this.myIcon}" alt="" style="height: 100px; width: 100px;" />
+
+        <div
+          style="display: inline; position: absolute; color: white; text-transform: uppercase;"
+        >
+          <header style="font-size: 36px; font-weight: bold">Unit 1</header>
+          <h2 style="font-size: 32px;margin: -1.0%;">${this.type}</h2>
+        </div>
       </div>
-      <div>${this.type}</div>
       <div>
         <pad-header></pad-header>
 
