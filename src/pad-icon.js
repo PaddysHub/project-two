@@ -29,11 +29,9 @@ export class padIcon extends SimpleColors {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === 'type' && this[propName] === 'did you know') {
         this.myIcon = question;
-        this.subheading = 'Science Objectives';
       }
       if (propName === 'type' && this[propName] === 'chem connection') {
         this.myIcon = beaker;
-        this.subheading = 'Math Objectives';
       }
       if (propName === 'type' && this[propName] === 'learning objectives') {
         this.myIcon = lightbulb;

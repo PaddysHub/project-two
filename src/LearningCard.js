@@ -50,13 +50,44 @@ export class LearningCard extends LitElement {
       if (propName === 'type' && this[propName] === 'did you know') {
         this.myIcon = question;
         this.subheading = 'Science Objectives';
+        this.myBody = html`
+          <ul>
+            <li>
+              There is about 0.4 pound or 200 grams of salt (NaCl) in the
+              average adult human body.
+            </li>
+          </ul>
+        `;
       }
       if (propName === 'type' && this[propName] === 'chem connection') {
         this.myIcon = beaker;
         this.subheading = 'Math Objectives';
+        this.myBody = html`
+          <ul>
+            <li>Describe the subatomic particles that make up an atom.</li>
+            <li>
+              Use the periodic table to determine the numbers of protons and
+              electrons in a neutral (uncharged) atom.
+            </li>
+          </ul>
+        `;
       }
       if (propName === 'type' && this[propName] === 'learning objectives') {
         this.myIcon = lightbulb;
+        this.myBody = html`
+          <ul>
+            <li>Describe the subatomic particles that make up an atom.</li>
+            <li>
+              Use the periodic table to determine the numbers of protons and
+              electrons in a neutral (uncharged) atom.
+            </li>
+            <li>Describe the subatomic particles that make up an atom.</li>
+            <li>
+              Use the periodic table to determine the numbers of protons and
+              electrons in a neutral (uncharged) atom.
+            </li>
+          </ul>
+        `;
       }
     });
   }
@@ -137,12 +168,10 @@ export class LearningCard extends LitElement {
         >
           <slot name="header"></slot>
         </div>
-        <div slot="content" class="content-card">
-          <p>Body</p>
+        <div slot="content" class="content-card" style="margin: 35px">
+          <p></p>
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <div>${this.myBody}</div>
           </ul>
           <!--Need to figure out how to have program determine what icon is used rather than pasting them all -->
 
