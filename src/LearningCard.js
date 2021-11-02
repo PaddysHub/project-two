@@ -23,7 +23,7 @@ export class LearningCard extends LitElement {
 
   constructor() {
     super();
-    this.myIcon = beaker;
+    this.icon = beaker;
     this.type = 'chem connection';
   }
 
@@ -36,7 +36,7 @@ export class LearningCard extends LitElement {
       // attribute helps us bind the JS spec for variables names to the HTML spec
       // <learning-card my-icon="whatever" will set this.myIcon to "whatever"
       // need to add string
-      myIcon: { type: String, attribute: 'my-icon' },
+      icon: { type: String, attribute: 'my-icon' },
     };
   }
 
@@ -48,9 +48,9 @@ export class LearningCard extends LitElement {
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === 'type' && this[propName] === 'did you know') {
-        this.myIcon = question;
+        this.icon = question;
         this.subheading = 'Science Objectives';
-        this.myBody = html`
+        this.body = html`
           <ul>
             <li>
               There is about 0.4 pound or 200 grams of salt (NaCl) in the
@@ -60,9 +60,9 @@ export class LearningCard extends LitElement {
         `;
       }
       if (propName === 'type' && this[propName] === 'chem connection') {
-        this.myIcon = beaker;
+        this.icon = beaker;
         this.subheading = 'Math Objectives';
-        this.myBody = html`
+        this.body = html`
           <ul>
             <li>Describe the subatomic particles that make up an atom.</li>
             <li>
@@ -73,8 +73,8 @@ export class LearningCard extends LitElement {
         `;
       }
       if (propName === 'type' && this[propName] === 'learning objectives') {
-        this.myIcon = lightbulb;
-        this.myBody = html`
+        this.icon = lightbulb;
+        this.body = html`
           <ul>
             <li>Describe the subatomic particles that make up an atom.</li>
             <li>
@@ -149,7 +149,7 @@ export class LearningCard extends LitElement {
   render() {
     return html`
       <div id="cardbackground" style="display: inline;">
-        <img src="${this.myIcon}" alt="" style="height: 100px; width: 100px;" />
+        <img src="${this.icon}" alt="" style="height: 100px; width: 100px;" />
 
         <div
           style="display: inline; position: absolute; color: white; text-transform: uppercase;"
@@ -171,7 +171,7 @@ export class LearningCard extends LitElement {
         <div slot="content" class="content-card" style="margin: 35px">
           <p></p>
           <ul>
-            <div>${this.myBody}</div>
+            <div>${this.body}</div>
           </ul>
           <!--Need to figure out how to have program determine what icon is used rather than pasting them all -->
 
