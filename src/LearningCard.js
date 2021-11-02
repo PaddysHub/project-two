@@ -152,6 +152,7 @@ export class LearningCard extends LitElement {
           >
             <slot name="content"></slot>
             <slot></slot>
+            <slot></slot>
           </div>
         </div>
       </div>
