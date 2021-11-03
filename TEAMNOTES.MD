@@ -73,15 +73,31 @@ ODL-card
 These are notes to be maintained PER date that you meet. What you did and what the next steps are
 ### Meeting Date
 
-1. Thursday Oct. 14th
+ Thursday Oct. 14th
 
 #### What we did:
 
-1. We focised on getting our simple colors implemented.  We looked over how to implement simple colors into our porjects during class today.  Simple colors is a required piece of this projectg so we wanted to get this in place early on.  Since we went over it today and we have a check in on Sunday, we want to get this done now.  We went through and followed the lecture/notes from class and things that were posted as a resource.  We successfully got simple colors implemented and pushed that code to the gitHub.  Right now it just has some filler words in it and a random color to the header.  This will be changed to actually reflect what the card is supposed to look like, we just wanted to make sure the header look correct per implementing simple colors.  
+ We focised on getting our simple colors implemented.  We looked over how to implement simple colors into our porjects during class today.  Simple colors is a required piece of this projectg so we wanted to get this in place early on.  Since we went over it today and we have a check in on Sunday, we want to get this done now.  We went through and followed the lecture/notes from class and things that were posted as a resource.  We successfully got simple colors implemented and pushed that code to the gitHub.  Right now it just has some filler words in it and a random color to the header.  This will be changed to actually reflect what the card is supposed to look like, we just wanted to make sure the header look correct per implementing simple colors.  
 
 #### What we'll do next
 
-1. Next we are trying to work on our icon. We are hoping to get that done before class on Tuesday so we have some code to review.  It will also help to review some code from our fellow classmates. 
+ Next we are trying to work on our icon. We are hoping to get that done before class on Tuesday so we have some code to review.  It will also help to review some code from our fellow classmates. 
+ 
+ ### Meeting Date 
+ 
+ Monday Nov. 2nd
+ 
+ #### What we did:
+ 
+ Tonight we made big progress on our card.  We were really struggling with getting our icon to to associate with a particular card and with that specific color.  We went through and removed some code that did not need to be there as well as restructure how we were calling our elements.  We eventually got everything to render in the correct areas but still need to incorporate slots while doing so
+ 
+ #### Meeting Date
+ 
+ Tuesday Nov. 3rd
+ 
+ #### What we did:
+ 
+ During class today we got some really good feeback during class about how to incorporate slots in our project to make the card more reusable.  We were able to get that organized and working well.  We then went in and got our button from the last project to render in each of our cards.  We are struggling to get it to say something else other than "Grey Goose" and get it to link to a different site, we know it should not look like that and look more reusable so we are trying to get that figured out before we turn it in. 
 
 
 # Status check ins
